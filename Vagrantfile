@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get upgrade -y
-    apt install ruby ruby-dev zlib1g-dev -y #g++ ?
+    apt install ruby ruby-dev zlib1g-dev libsqlite3-dev -y
     gem install bundler
   SHELL
 end
