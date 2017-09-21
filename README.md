@@ -7,10 +7,12 @@
 
 ## setup
 
+install vagrant: https://www.vagrantup.com/downloads.html
+
 ### terminal 1
 
 ```
-vagrant up # provisioning will run, which will take a couple minutes
+vagrant up # will take several minutes if you don't have a xenial32 base box locally
 vagrant ssh
 cd /vagrant
 bundle install
